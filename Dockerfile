@@ -7,4 +7,4 @@ COPY message.txt .
 
 RUN chmod +x hello.sh
 
-CMD ["./hello.sh"]
+CMD ["sh", "-c", "while true; do ./hello.sh; sleep 30; done"]
